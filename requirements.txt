@@ -1,0 +1,18 @@
+# Lib
+numpy
+torch==1.13.1
+torchvision==0.14.1
+pillow
+pandas
+clip @ git+https://github.com/openai/CLIP.git
+timm
+rich
+colorlog
+tqdm
+nltk
+termcolor
+wandb
+wandb-osh
+openpyxl
+scikit-learn
+gdown

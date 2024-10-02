@@ -1,0 +1,15 @@
+CUDA_VISIBLE_DEVICES=0,1 python gallop/train.py \
+    --clip_name clip_vit_b16 \
+    --dataset_name imagenet \
+    --inference_batch_size 256 \
+    --eval_ood True \
+    --eval_domains True \
+    --checkpointing_segments 0 \
+    --use_local_features True \
+    --parallel_text_encoder True \
+    --parallel_vision_encoder True \
+    --n_global_prompts 4 \
+    --n_local_prompts 4 \
+    --topk 5 10 15 20 \
+    --eval_only True \
+    --checkpoint_path $1
