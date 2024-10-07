@@ -13,7 +13,9 @@ pip install -e .
 ```
 
 ## Datasets
-Please follow instructions in the [CoOp](https://github.com/KaiyangZhou/CoOp/blob/main/DATASETS.md) repository to download all the datasets. Note that downloading the class names and splits (e.g. `split_zhou_Caltech101.json`) is not required as there are already included in the `gallop/datasets` folder. 
+Please follow instructions in the [CoOp](https://github.com/KaiyangZhou/CoOp/blob/main/DATASETS.md) repository to download the datasets used for the few-shot image classification and domain generalization experiments. Note that downloading the class names and splits (e.g. `split_zhou_Caltech101.json`) is not required as there are already included in the `gallop/datasets` folder. For the out-of-distribition experiments, we use the OOD datasets [iNaturalist](https://arxiv.org/abs/1707.06642), [SUN](https://vision.princeton.edu/projects/2010/SUN/), [Places](https://arxiv.org/abs/1610.02055), and [Texture](https://arxiv.org/abs/1311.3618) curated by [Huang et al. 2021](https://arxiv.org/abs/2105.01879). PLease follow instructions from this [repository](https://github.com/deeplearning-wisc/large_scale_ood#out-of-distribution-dataset) to download the datasets.
+
+The overall file structure is as follows:
 
 The directory structure where all the datasets are stored should look like this:
 
@@ -41,6 +43,13 @@ $DATA_FOlDER/
 |––––stanford_cars/
 |––––SUN397/
 |––––UCF-101-midframes/
+|––––ood_data/
+|––––––––iNaturalist/
+|––––––––SUN/
+|––––––––Places/
+|––––––––dtd/
+|––––––––––––images/
+
 
 ```
 
