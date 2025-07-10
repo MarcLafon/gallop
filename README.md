@@ -151,10 +151,12 @@ To run the full evaluation of GalLoP (accuracy, ood detection and ood generaliza
 ## Citation
 If you found our paper and/or code usefull please consider cite our work:
 ```bibtex
-@article{lafon2024gallop,
+@inproceedings{lafon2024gallop,
   title={Gallop: Learning global and local prompts for vision-language models},
   author={Lafon, Marc and Ramzi, Elias and Rambour, Cl{\'e}ment and Audebert, Nicolas and Thome, Nicolas},
-  journal={arXiv preprint arXiv:2407.01400},
-  year={2024}
+  booktitle={European Conference on Computer Vision},
+  pages={264--282},
+  year={2024},
+  organization={Springer}
 }
 ```
