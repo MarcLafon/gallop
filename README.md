@@ -20,35 +20,35 @@ The overall file structure is as follows:
 The directory structure where all the datasets are stored should look like this:
 
 ```
-$DATA_FOlDER/
-|––––Imagenet/
-|––––––––train/
-|––––––––val/
-|––––imagenetv2-matched-frequency-format-val/
-|––––imagenet-a/
-|––––imagenet-r/
-|––––sketch/
-|––––caltech101/
-|––––––––101_ObjectCategories/
-|––––EuroSAT_RGB/
-|––––dtddataset/
-|––––––––dtd/
-|––––––––––––images/
-|––––fgvc-aircraft-2013b/
-|––––flowers102/
-|––––food-101/
-|––––––––images/
-|––––oxford-iiit-pet/
-|––––––––images/
-|––––stanford_cars/
-|––––SUN397/
-|––––UCF-101-midframes/
-|––––ood_data/
-|––––––––iNaturalist/
-|––––––––SUN/
-|––––––––Places/
-|––––––––dtd/
-|––––––––––––images/
+$DATA_FOLDER/
+└–––-Imagenet/
+│    ├–––––train/
+│    └––––val/
+├––––imagenetv2-matched-frequency-format-val/
+├––––imagenet-a/
+├––––imagenet-r/
+├––––sketch/
+├––––caltech101/
+│    └––––101_ObjectCategories/
+├––––EuroSAT_RGB/
+├––––dtddataset/
+│    └–––dtd/
+│        └––––images/
+├––––fgvc-aircraft-2013b/
+├––––flowers102/
+├––––food-101/
+│    └–––images/
+├––––oxford-iiit-pet/
+│    └–––images/
+├––––stanford_cars/
+├––––SUN397/
+├––––UCF-101-midframes/
+└––––ood_data/
+     ├–––iNaturalist/
+     ├–––SUN/
+     ├–––Places/
+     └–––dtd/
+         └––––images/
 
 
 ```
