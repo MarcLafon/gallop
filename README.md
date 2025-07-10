@@ -147,6 +147,28 @@ To run the full evaluation of GalLoP (accuracy, ood detection and ood generaliza
 | LSN<sub>+CoCoOp</sub>     |        72.9       |     21.6 \/ 95.8 | 26.3 \/ 94.4 | 34.5 \/ 91.3  | 38.5 \/ 90.4 | 30.2 \/ 93.0 |
 |  **GalLoP**               |        75.1       |     13.7 \/ 97.1 |  24.9 \/ 94.0 | 32.5 \/ 91.3  | 38.4 \/ 90.4 | 27.3 \/ 93.2 |
 
+## Details for low-shot experiments
+
+Here are some experimental details to reproduce the few-shot experimental results. When training with very low shots, we use fewer training epochs to avoid overfitting, as in previous works.
+
+Here are the number of epochs we used for each number of shots:
+ - 1 shot: 50 epochs,
+ - 2 and 4 shots: 100 epochs,
+ - 8 and 16 shots: 200 epochs.
+Note that we train with 50 epochs for Imagenet and 200 epochs for SUN397, regardless of the number of shots.
+
+In addition, the batch sizes are different for each dataset (depending on the number of classes in the dataset). The batch sizes for each dataset are:
+- Imagenet: 128,
+- Caltech101: 32,
+- FGVCAircraft: 32,
+- StanfordCars: 32,
+- Flowers102: 32,
+- Food101: 32,
+- SUN397: 128,
+- OxfordPets: 32,
+- DTD: 32,
+- Eurosat: 10,
+- UCF101: 32.
 
 ## Citation
 If you found our paper and/or code usefull please consider cite our work:
